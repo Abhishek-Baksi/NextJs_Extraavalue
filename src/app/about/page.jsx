@@ -23,10 +23,10 @@ function About() {
           <h1 className={styles.title}>Who Are We ?</h1>
           <p className={styles.desc}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum
+            industry. Lorem Ipsum has been the industrys standard.Lorem Ipsum
             is simply. Dummy text of the printing Lorem Ipsum is simply dummy
             text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever.
+            the industrys standard dummy text ever.
           </p>
         </div>
         <div className={styles.item}>
