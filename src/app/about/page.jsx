@@ -8,7 +8,7 @@ function About() {
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
-          src={"https://www.extraavalue.com/images/resource/time.png"}
+          src="/apps.jpg"
           fill={true}
           alt=""
           className={styles.img}
