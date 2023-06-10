@@ -1,5 +1,21 @@
 .container {
   /* background-color: red; */
+  
+  
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+ margin-bottom:10px;
+}
+
+
+.title h1 {
+  text-align: center;
 }
 
 .content {
@@ -31,6 +47,7 @@
 .form {
   flex: 1;
   display: flex;
+  padding: 10px;
   flex-direction: column;
   gap: 20px;
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from '@/app/portfolio/page.module.css'
 
-function Portpolio() {
+function Portfolio() {
   return (
-    <div>
+    <div className={styles.container}>
         Portpolio
     </div>
   )
 }
 
-export default Portpolio
+export default Portfolio
