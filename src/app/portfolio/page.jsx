@@ -18,7 +18,7 @@ function Portfolio() {
           Confirm Pickup
           </span>
         </Link>
-        <Link className={styles.item} href="./portfolio/apps">
+        <Link className={styles.item} href="./portfolio/application">
           <span className={styles.title}>
           Instant Payment
           </span>
