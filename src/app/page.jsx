@@ -16,12 +16,10 @@ export default function Home() {
           Grab the best deal on your old smartphone!
           <br />
           {/* this is added remove the span typewriter-container and use-client and br */}
-          <span style={{ color: "#53c28b", fontWeight: "bold" }}>
-            <span
-              style={{ color: "white", fontSize: "20px", fontWeight: "normal" }}
-            >
+          <span style={{ color: "#53c28b", fontWeight: "600" }}>
+            
               Instant
-            </span>{" "}
+            {" "}
             <Typewriter
               words={["Payment", "Price", "Pickup"]}
               loop={true}
