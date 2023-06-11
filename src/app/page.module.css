@@ -12,7 +12,7 @@
 }
 
 .title {
-  background: linear-gradient(to bottom, #194c33, #bbb);
+  background: linear-gradient(to bottom, #26704c, #8c8585);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -24,11 +24,11 @@
   animation: move 3s infinite ease alternate;
 }
 @keyframes move {
-  from{
-      transform: translateY(-10px);
+  from {
+    transform: translateY(-10px);
   }
-  to{
-      transform: translateY(10px) scale(1.03)
+  to {
+    transform: translateY(10px) scale(1.03);
   }
 }
 
@@ -36,6 +36,3 @@
   font-size: 24px;
   font-weight: 300;
 }
-
-
-
