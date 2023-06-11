@@ -44,7 +44,7 @@ function Navbar() {
         <div className={styles.links}>
           <DarkModeToogle/>
             {
-                links.map((link)=><Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>)
+                links.map((link)=> <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>)
             }
         </div>
         <button className={styles.logout} onClick={()=>console.log("Logged Out")}>Logout</button>
