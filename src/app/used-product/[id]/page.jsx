@@ -33,8 +33,10 @@ async function BlogPost({ params }) {
           />
         </div>
         <div className={styles.content}>
-          <h1 className={styles.title}>{deviceData.model}</h1>
-          <p className={styles.desc}></p>
+          <h1 className={styles.title}>Model : {deviceData.model}</h1>
+          <p className={styles.desc}>Brand : {deviceData.brand}</p>
+          <p className={styles.desc}>Min-Price : {deviceData.minPrice}</p>
+          <p className={styles.desc}>Max-Price : {deviceData.maxPrice}</p>
         </div>
       </Link>
     </div>
