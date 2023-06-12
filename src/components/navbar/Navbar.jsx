@@ -17,7 +17,7 @@ const links = [
   },
   {
     id: 3,
-    title: "Sell",
+    title: "Sell Now",
     url: "/used-product",
   },
   {
