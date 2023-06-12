@@ -32,7 +32,6 @@ async function Blog({params}) {
           <div className={styles.content}>
             <h1 className={styles.title}>Brand : {item.brand}</h1>
             <p className={styles.desc}> Model :{item.model}</p>
-            {console.log(item._id)}
           </div>
         </Link>
       ))}
