@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
+const cur_url = "https://jsonplaceholder.typicode.com/posts";
+const main_url = "https://carmine-jellyfish-tie.cyclic.app/used-product";
+
 async function getData(id) {
   const res = await fetch(
     `https://carmine-jellyfish-tie.cyclic.app/used-product/${id}`,
@@ -16,6 +19,27 @@ async function getData(id) {
   }
 
   return res.json();
+}
+
+export async function generateMetadata({ params }) {
+  const post = await getData(params.id)
+  return {
+    title: `Sell ${post.brand}-${post.model} Device on ExtraaValue`,
+    description: `ExtraaValue Sell Device | ${post.model}`
+  }
+  // try {
+  //   const post = await getData(params.id);
+  //   return {
+  //     title: `ExtraaValue | ${post.brand}`,
+  //     description: `ExtraaValue Select Device | ${post.model}`,
+  //   };
+  // } catch (error) {
+  //   console.error("Error generating metadata:", error);
+  //   return {
+  //     title: "ExtraaValue",
+  //     description: "Error generating metadata",
+  //   };
+  // }
 }
 
 async function BlogPost({ params }) {

@@ -15,7 +15,7 @@ async function connect() {
         }
         await mongoose.disconnect();
     }
-    const db = await mongoose.connect(process.env.DATABASE_URI);
+    const db = await mongoose.connect(process.env.TEST_URI);
     connection.isConnected = db.connections[0].readyState;
 }
 

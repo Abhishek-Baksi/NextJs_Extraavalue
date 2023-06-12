@@ -20,15 +20,14 @@ a{
   color: inherit;
 }
 
-.light{
-  background-color: whitesmoke;
-  /* color: #111; */
-  color: black;
+.light {
+  background-color: white;
+  color: #111;
 }
-.light{
-  /* background-color: #111; */
-  color: white;
-  background-color: black;
+
+.dark {
+  background-color: #111;
+  color: #bbb;
 }
 .theme{
   transition: 1s all ease;
