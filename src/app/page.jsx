@@ -29,7 +29,7 @@ export default function Home() {
             <span>|</span>
           </span>
         </p>
-        <Button url="/portpolio" text="See our Service" />
+        <Button url="/portfolio" text="See our Service" />
       </div>
 
       <div className={styles.item}>
