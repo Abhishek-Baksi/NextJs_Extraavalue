@@ -22,3 +22,21 @@
     border-radius: 50%;
     position: absolute;
   }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 30px;
+      height: 18px;
+      border-width: 1px;
+      padding: 1px;
+    }
+  
+    .icon {
+      font-size: 10px;
+    }
+  
+    .ball {
+      width: 12px;
+      height: 12px;
+    }
+  }

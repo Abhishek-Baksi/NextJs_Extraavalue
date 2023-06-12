@@ -23,7 +23,7 @@ async function Blog({params}) {
           <div className={styles.imageContainer}>
             <Image
               className={styles.img}
-              src="https://images.pexels.com/photos/6913718/pexels-photo-6913718.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src={item.image}
               alt=""
               width={400}
               height={250}
