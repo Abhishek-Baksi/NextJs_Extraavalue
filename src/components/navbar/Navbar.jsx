@@ -12,13 +12,13 @@ const links = [
   },
   {
     id: 2,
-    title: "Sell Now",
+    title: "Portpolio",
     url: "/portfolio",
   },
   {
     id: 3,
-    title: "Blog",
-    url: "/blog",
+    title: "Sell",
+    url: "/used-product",
   },
   {
     id: 4,
