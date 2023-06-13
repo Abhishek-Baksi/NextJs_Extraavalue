@@ -9,7 +9,7 @@ export const GET = async (request, { params }) => {
     await db.connect();
     console.log("Database Connected");
 
-    const posts = await Post.findById(_id);
+    const posts = await Post.findById(id);
 
     return new NextResponse(JSON.stringify(posts), { status: 200 });
   } catch (err) {
