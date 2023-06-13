@@ -1,7 +1,8 @@
 import React from "react";
-import Link from "next/link";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import Button from "@/components/Button/Button";
 
 const cur_url = "https://jsonplaceholder.typicode.com/posts";
 const main_url = "https://carmine-jellyfish-tie.cyclic.app/used-product";
@@ -46,7 +47,7 @@ async function BlogPost({ params }) {
   const deviceData = await getData(params.id);
   return (
     <div className={styles.mainContainer}>
-      <Link className={styles.container} href="#">
+      <div className={styles.container} >
         <div className={styles.imageContainer}>
           <Image
             className={styles.img}
@@ -62,7 +63,8 @@ async function BlogPost({ params }) {
           <p className={styles.desc}>Min-Price : {deviceData.minPrice}</p>
           <p className={styles.desc}>Max-Price : {deviceData.maxPrice}</p>
         </div>
-      </Link>
+        <Button text={"Click To sell now"} url={"/dashboard/login"}></Button>
+      </div>
     </div>
   );
 }
