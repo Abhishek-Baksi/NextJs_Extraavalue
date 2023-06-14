@@ -22,26 +22,12 @@ async function getData(id) {
 }
 
 export async function generateMetadata({ params }) {
- console.log(params.id)
+
   const post = await getData(params.id)
-  
   return {
-    title: `Sell  Device on ExtraaValue`,
-    description: `ExtraaValue Sell Device | `
-  }
-  // try {
-  //   const post = await getData(params.id);
-  //   return {
-  //     title: `ExtraaValue | ${post.brand}`,
-  //     description: `ExtraaValue Select Device | ${post.model}`,
-  //   };
-  // } catch (error) {
-  //   console.error("Error generating metadata:", error);
-  //   return {
-  //     title: "ExtraaValue",
-  //     description: "Error generating metadata",
-  //   };
-  // }
+    title: post.brand,
+    description: post.model,
+  };
 }
 
 async function BlogPost({ params }) {

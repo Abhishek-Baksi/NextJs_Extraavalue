@@ -1,12 +1,19 @@
 import React from 'react'
 import styles from "./page.module.css"
+import Image from 'next/image'
 
 function SellNowlayout({children}) {
   
   return (
     <div> 
         <div className={styles.mainContainer}>
-          <h1>Sell and get price on Extraavalue instantly</h1>
+        <Image
+              className={styles.img}
+              src={'/cashify.jpeg'}
+              alt=""
+              width={550}
+              height={250}
+            />
         </div>
         {children}
     </div>
