@@ -1,8 +1,8 @@
 import React from "react";
-
+import { notFound } from "next/navigation";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Button from "@/components/Button/Button";
+
 
 
 async function getData(id) {
@@ -15,7 +15,7 @@ async function getData(id) {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data from sell-now ID page");
+    return notFound();
   }
 
   return res.json();
@@ -46,13 +46,13 @@ async function BlogPost({ params }) {
           />
         </div>
         <div className={styles.content}>
-        <h6 className={styles.title}>_ID :{deviceData._id}</h6>
+        <h6 className={styles.title}>_ID :</h6>
           <h1 className={styles.title}>Model :{deviceData.model}</h1>
           <p className={styles.desc}>Brand :{deviceData.brand} </p>
           <p className={styles.desc}>Min-Price : {deviceData.minPrice} </p>
           <p className={styles.desc}>Max-Price : {deviceData.maxPrice} </p>
         </div>
-        <Button text={"Click To sell now"} url={"/dashboard/login"}></Button>
+        <button>click</button>
       </div>
     </div>
   );

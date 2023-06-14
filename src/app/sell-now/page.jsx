@@ -18,11 +18,11 @@ async function SellNowPage({ params }) {
 
   return (
     <div className={styles.mainContainer}>
-      {data.map((item) => (
+      {data && data.map((item) => (
         <Link
           className={styles.container}
           href={`/sell-now/${item._id}`}
-          key={item._id}
+          key={item.id}
         >
           <div className={styles.imageContainer}>
             <Image
@@ -37,7 +37,7 @@ async function SellNowPage({ params }) {
           <div className={styles.content}>
             <h1 className={styles.title}>Brand : {item.brand}</h1>
             <p className={styles.desc}> Model :{item.model}</p>
-            <p className={styles.desc}> ID : {item._id}</p>
+            <p className={styles.desc}> ID : </p>
           </div>
         </Link>
       ))}
