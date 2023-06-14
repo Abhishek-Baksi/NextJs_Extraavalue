@@ -18,7 +18,7 @@ const links = [
   {
     id: 3,
     title: "Sell Now",
-    url: "/used-product",
+    url: "/sell-now",
   },
   {
     id: 4,

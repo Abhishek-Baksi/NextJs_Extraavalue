@@ -3,15 +3,10 @@
 }
 
 .container {
-  width: 100%;
 }
 
 .selectTitle {
   margin: 20px 0px;
-}
-.selectTitleDesc {
-  margin: 20px 0px 10px 0px;
-  color: #53c28b;
 }
 
 .items {
@@ -29,20 +24,20 @@
 }
 
 .item:nth-child(1) {
-  background: url("/bestPrice.jpeg");
+  background: url("/illustration.png");
 }
 .item:nth-child(2) {
-  background: url("/confirmPickup.jpeg");
+  background: url("/websites.jpg");
 }
 .item:nth-child(3) {
-  background: url("/instantPayment.jpeg");
+  background: url("/apps.jpg");
 }
 
 .title {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
