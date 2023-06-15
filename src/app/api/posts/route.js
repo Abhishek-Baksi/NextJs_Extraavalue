@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import db from "@/utils/db";
 import Post from "@/models/Post";
 
-export const GET = async (request) => {
+export const POST = async (request) => {
 
 
   try {
